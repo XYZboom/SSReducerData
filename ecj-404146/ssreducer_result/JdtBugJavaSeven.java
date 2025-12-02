@@ -12,7 +12,10 @@ public final class JdtBugJavaSeven {
 
                 try {
 
-                    while ((String) null != null) {}
+                    try {
+                            ((BufferedReader) null).readLine();
+                        } catch (final IOException e) {
+                            }
 
                 } finally {
 
