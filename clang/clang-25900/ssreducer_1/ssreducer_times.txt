@@ -1,0 +1,4 @@
+predict times: 2428
+file cache hit times: 33
+elements cache hit times: 1862
+reduce time: 13m 7.402693893s

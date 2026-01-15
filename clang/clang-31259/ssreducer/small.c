@@ -1,0 +1,95 @@
+
+typedef signed char int8_t;
+typedef short int int16_t;
+typedef int int32_t;
+typedef unsigned short int uint16_t;
+int printf (const char *, ...);
+static void
+platform_main_end( )
+{
+
+
+
+
+
+ }
+
+
+
+
+
+
+static void *** g_268 = 0xAFABA540;
+static int32_t g_375 = 0x44E1BC11;
+static int8_t g_643[7][5][7] = {{{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}, {{8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}, {8, 0x98, (-2), 0xE0, 0x5B, 0x5A, 4}}};
+static int8_t g_865 = (-1);
+static int32_t g_1149 = 0xAFE9AC74;
+
+
+
+inline static int8_t func_1();
+inline static int32_t func_12(int16_t , int16_t p_14, int16_t );
+inline static int16_t func_31(int8_t , void *** p_33, int32_t );
+inline static const uint16_t func_88();
+inline static int8_t func_1()
+{
+    }
+
+
+
+
+
+
+
+func_12(int16_t p_13, int16_t p_14, int16_t p_15)
+{
+    void *** l_1522 = 0x6BD8CA87;
+    l_1522++;
+    return g_865;
+}
+
+
+
+
+
+
+
+inline static int16_t func_31(int8_t p_32, void *** p_33, int32_t p_34)
+{
+    int32_t l_1234 = 1;
+    p_34 = p_34;
+    g_1149 ^= (g_375 &= (((safe_sub_func_uint16_t_u_u((safe_add_func_int32_t_s_s(((safe_sub_func_int8_t_s_s(p_33, ((l_1234 = ((((1U) < (~(((int8_t)1)))) > p_33) > ((int8_t)1))) && g_268))) || g_643[2][2][2]), p_32)), p_33)) ^ 0xB2) < 3U));
+    p_34 ^= (p_32 | 250U);
+    return g_643[2][2][2];
+}
+
+
+
+
+
+
+
+inline static const uint16_t func_88()
+{
+    }
+
+
+
+
+
+int main ()
+{
+    int i, j, k;
+    for (; i < 7; i++)
+    {
+        for (j = 0; j < 5; j++)
+        {
+            for (k = 0; k < 7; k++)
+            {
+                if (((int)1)) printf("index = [%d][%d][%d]\n", i, j, k);
+
+            }
+        }
+    }
+    platform_main_end( );
+    }
