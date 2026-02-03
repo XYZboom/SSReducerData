@@ -5,6 +5,11 @@ typedef unsigned char uint8_t;
 typedef unsigned short int uint16_t;
 typedef unsigned int uint32_t;
 typedef unsigned long long int uint64_t;
+static void
+platform_main_end(uint32_t crc )
+{
+ printf ("checksum = %X\n", crc);
+}
 static int16_t
 (safe_unary_minus_func_int16_t_s)(int16_t si )
 {
@@ -37,16 +42,13 @@ crc32_byte (uint8_t b) {
 static void
 crc32_8bytes (uint64_t val)
 {
- crc32_byte ((val>>0) & 0xff);
+ crc32_byte ((val>>8) & 0xff);
  }
 static void
-transparent_crc (uint64_t val, char* vname )
+transparent_crc (uint64_t val  )
 {
  crc32_8bytes(val);
- if (((int)1)) {
-    printf("...checksum after hashing %s : %lX\n", vname, crc32_context ^ 0xFFFFFFFFUL);
  }
-}
 struct S0 {
    int32_t f0;
    signed f1 : 22;
@@ -109,14 +111,15 @@ static uint8_t func_14( int8_t p_16   )
         };
     };
 }
-int main ( )
+int main (int argc, char* argv[])
 {
     int i, j, k;
     crc32_gentab();
     func_1();
     for (i = 0; i < 1; i++)
     {
-        transparent_crc(g_217[i].f1, "g_217[i].f1" );
+        transparent_crc(g_217[i].f1  );
         }
+    platform_main_end(crc32_context ^ 0xFFFFFFFFUL );
     return 0;
 }

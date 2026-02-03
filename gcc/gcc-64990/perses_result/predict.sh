@@ -1,7 +1,7 @@
 #!/bin/bash
 # allow docker to access current directory
 chmod 777 .
-run_in_docker="docker run --rm -v $(realpath .):/tmp/clang-27317 -w /tmp/clang-27317 cnsun/perses:perses_part_54_name_clang_trunk"
+run_in_docker="docker exec -w /host$(realpath .) perses"
 TIMEOUTCC=10
 TIMEOUTEXE=2
 TIMEOUTCCOMP=10
@@ -11,7 +11,7 @@ clang_7_1_0="$run_in_docker timeout -s 9 $TIMEOUTCC clang-7.1.0"
 gcc_4_8_0="$run_in_docker timeout -s 9 $TIMEOUTCC gcc-4.8.0"
 gcc_7_1_0="$run_in_docker timeout -s 9 $TIMEOUTCC gcc-7.1.0"
 gcc="$run_in_docker timeout -s 9 $TIMEOUTCC gcc"
-ccomp="$run_in_docker timeout -s 9 $TIMEOUTCCOMP ccomp"
+ccomp="$run_in_docker timeout -s 9 $TIMEOUTCCOMP /home/coq/.opam/4.05.0/bin/ccomp"
 
 BADCC1=()
 BADCC3=()

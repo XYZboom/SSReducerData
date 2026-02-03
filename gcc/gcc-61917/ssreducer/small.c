@@ -12,19 +12,13 @@ typedef unsigned int uint32_t;
 
 static int8_t
 (safe_mul_func_int8_t_s_s)(int8_t si1  )
-{
- 
-  }
+{}
 static int8_t
 (safe_lshift_func_int8_t_s_s)(int8_t left  )
-{
- 
-  }
+{}
 static int8_t
 (safe_rshift_func_int8_t_s_u)(int8_t left  )
-{
- 
-  }
+{}
 static int16_t
 (safe_sub_func_int16_t_s_s)(int16_t si1  )
 {
@@ -34,19 +28,13 @@ static int16_t
 }
 static int16_t
 (safe_mul_func_int16_t_s_s)(int16_t si1, int16_t si2 )
-{
- 
-  }
+{}
 static int16_t
 (safe_lshift_func_int16_t_s_s)(  )
-{
- 
-  }
+{}
 static int16_t
 (safe_lshift_func_int16_t_s_u)(int16_t left  )
-{
- 
-  }
+{}
 static int16_t
 (safe_rshift_func_int16_t_s_u)(int16_t left  )
 {
@@ -58,9 +46,7 @@ static int16_t
 }
 static int32_t
 (safe_unary_minus_func_int32_t_s)(int32_t si )
-{
- 
-  }
+{}
 static int32_t
 (safe_add_func_int32_t_s_s)(int32_t si1, int32_t si2 )
 {
@@ -72,29 +58,19 @@ static int32_t
 }
 static uint8_t
 (safe_add_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 )
-{
- 
-  }
+{}
 static uint8_t
 (safe_mod_func_uint8_t_u_u)(uint8_t ui1  )
-{
- 
-  }
+{}
 static uint8_t
 (safe_lshift_func_uint8_t_u_s)( int right )
-{
- 
-  }
+{}
 static uint16_t
 (safe_add_func_uint16_t_u_u)(uint16_t ui1  )
-{
- 
-  }
+{}
 static uint16_t
 (safe_mod_func_uint16_t_u_u)( uint16_t ui2 )
-{
- 
-  }
+{}
 static uint32_t
 (safe_sub_func_uint32_t_u_u)( uint32_t ui2 )
 {
@@ -218,17 +194,9 @@ func_1 ()
     {
       if ((((((((((uint32_t)1)) || 0xFDL) >= ((volatile uint32_t)1)) & ((uint32_t)1)) < ((((safe_rshift_func_int16_t_s_u (((int16_t)1) )) != ((-1L) <= (((int8_t)1)))) | ((int16_t)1)) < ((int16_t)1))) < ((int16_t)1)) | ((int8_t)1)))
       {
- for
-   (0;
-    (((uint8_t)1)
-     <
-     57);
-    )
- {
-   return
-     ((int16_t)1);
- };
- }
+ return
+   ((int16_t)1);
+      }
       else;
       }
     else;
@@ -292,8 +260,7 @@ func_14
    int8_t
    p_16
    )
-{
-  }
+{}
 static int16_t
 func_22
   (
@@ -322,8 +289,7 @@ func_42
   (uint16_t
    p_43
    )
-{
-  }
+{}
 static uint8_t
 func_45
   (uint32_t

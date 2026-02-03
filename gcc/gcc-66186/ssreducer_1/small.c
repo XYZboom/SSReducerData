@@ -140,7 +140,7 @@ static int32_t g_1600 = 0L;
 
 
 static int32_t func_1();
-static int32_t func_8(uint16_t p_9  );
+static int32_t func_8( uint8_t p_10 );
 static int8_t func_29(int32_t p_30  );
 static uint32_t func_42(uint32_t p_43 );
 static int16_t func_48( const uint16_t p_50  );
@@ -152,7 +152,7 @@ static uint32_t func_97( uint16_t p_99, uint16_t p_100, uint32_t p_101 );
 static int32_t func_1()
 {
 
-(safe_sub_func_int32_t_s_s(func_8((((uint8_t)1))  ) ));
+(safe_sub_func_int32_t_s_s(func_8( ((int32_t)1) ) ));
     g_1600 |= (((uint8_t)1));
     }
 
@@ -162,9 +162,9 @@ static int32_t func_1()
 
 
 
-static int32_t func_8(uint16_t p_9  )
+static int32_t func_8( uint8_t p_10 )
 {
-    (((((safe_lshift_func_int8_t_s_u(func_29(((safe_rshift_func_int8_t_s_u(((((uint8_t)1)) & (safe_div_func_int16_t_s_s((safe_mod_func_uint8_t_u_u((+((((int32_t)1) > func_42(((int32_t)1) )) | (safe_rshift_func_int16_t_s_s(func_48( ((safe_add_func_uint16_t_u_u(func_55((safe_sub_func_int32_t_s_s((+(((int32_t)1))) ))  ) )) || ((uint16_t)1))  ) )))) )) ))) )) >= ((const int16_t)1))  ) )) && ((int32_t)1)) | ((uint32_t)1)) == 8UL) & p_9);
+    (((((safe_lshift_func_int8_t_s_u(func_29(((safe_rshift_func_int8_t_s_u(((((uint8_t)1)) & (safe_div_func_int16_t_s_s((safe_mod_func_uint8_t_u_u((+((((int32_t)1) > func_42(((int32_t)1) )) | (safe_rshift_func_int16_t_s_s(func_48( ((safe_add_func_uint16_t_u_u(func_55((safe_sub_func_int32_t_s_s((+(((int32_t)1))) ))  ) )) || ((uint16_t)1))  ) )))) )) ))) )) >= ((const int16_t)1))  ) )) && ((int32_t)1)) | ((uint32_t)1)) == 8UL) & ((uint16_t)1));
     return ((int32_t)1);
 }
 

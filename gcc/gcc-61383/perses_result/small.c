@@ -1,86 +1,95 @@
-typedef short     z      ;
-typedef unsigned      c      ;
-        signed
- a                           (       a               )
-{
-}
-        signed
- b                            (z       b   , int a     )
-{
-}
-       c
- p                         (c       z  , c       c   )
+        short
+  l
+                ;typedef signed      c     ;
+typedef unsigned      h      ;
+        short
+ a                        (
+        short
+                                  h  , c      c   )
 {
   return
-                             z                                                                                    ?
-      c     :
-     z   + c   ;
+      c   == 0                                         ?
+      h     :
+     h   % c   ;
 }
-  c
-  l
-                   ,
-  d
-                             ;
-       z
+       c
+ f                            (
+        short
+                                       b   , int a     )
+{
+}
+static
+  h
+  g
+  =
+  0X8000     ;
+static
+        short
 t
+(c
+);
+       c
+v
                 (
    b
                                )  {
+  c
+    a
+    =
+    1          ;
+  return
+    a   ;
+                                            }
+       c
+u
+  (c
+   b  ,
+   h
+   c  ,
+   h
+   a
+)
+{
+    if (          a  ,                                                                   f                             (0      ,         t       ( (         v       (a  )                                                                       ) & g     ) )                                                            , a                           )
+      return
+ a    ;
+}
+        short
+t
+  (
+   b
+)
+{
   for
     (
       ;
-      d
+      l
       <
       1  ;
-     d
+     l
      =
-     p
-     (a    ,
-      1))
+      1 )
   {
-  c
-      a
-                             ;
-    if (                                                                                                                                                                           a     =                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      b
-          == 0                                         ?
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                b
-            :
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         b
-         %
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                b                                                                                               , 0   )
+    c
+      c
+                 ;
+    if ( 0       <  a                            (                                                                                    g          |                                (c     =  a                        (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   b    , b   ) )                                                                                         , 0)  )
         ;
     else
     {
-        signed
- h
+        short
+ a
  =
  0    ;
-      if ( b    <=               h                                                                                                                                                                                                                                                                                                                                                                                                             )
-        ;
+      if ( b    <=               a                                                                                                                                                                                                                                                                                                                                                                                                             )
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
       else
-      if (a    )
+      if (c    )
  break;
     }
   }
   return
-    l
-                             ;               }
-        signed
-u
-  (
-        signed
-   a  ,
-   c
-   d  ,
-   c
-   c
-)
-{
-    if (                                                                                 b                             (0      ,         t       (
- 0
-                                                                                                                                                                                                                                                           ) )             , a                                                                          )
-      return
- a    ;
+    b    ;
 }
 int
 main
@@ -88,8 +97,7 @@ main
 )
 {
   if (      u      (a  , a  , a  )                                                                                                                                                                                                                                                                                                                                                                                           )
-             ;
+         ;
   return
-    0
-                             ;
+    0;
 }

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # allow docker to access current directory
 chmod 777 .
-run_in_docker="docker run --rm -v $(realpath .):/tmp/gcc-71626 -w /tmp/gcc-71626 cnsun/perses:perses_part_54_name_clang_trunk"
-gcc_4_9_0="$run_in_docker gcc-4.9.0 -c -O3"
-gcc="$run_in_docker gcc -c -O3"
+run_in_docker="docker exec -w /host$(realpath .) perses"
+TIMEOUTCC=30
+gcc_4_9_0="$run_in_docker timeout -s 9 $TIMEOUTCC gcc-4.9.0 -c -O3"
+gcc="$run_in_docker timeout -s 9 $TIMEOUTCC gcc -c -O3"
 set -o pipefail
 set -o nounset
 
@@ -13,7 +14,6 @@ GOODCOMP=1 # 0: doesn't compile; 1: compiles
 BADCC=("$gcc_4_9_0")
 GOODCC=("$gcc")
 CFILE=small.c
-TIMEOUTCC=30
 
 rm -f out*.txt
 

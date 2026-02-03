@@ -1,0 +1,64 @@
+#      iteration      before_size       after_size   removed_tokens         time(ms)          queries
+#              1             6133               49             6084             8644              119
+#              2               49               49                0             1773              113
+#              3               49               41                8             2763               55
+#              4               41               41                0              522                8
+#              5               41               41                0              611               26
+#              6               41               41                0             2320               43
+#              7               41               41                0                3                0
+#              8               41               37                4             1709                5
+#              9               37               37                0             1758               32
+#             10               37               37                0              479                0
+#          total             6133               37             6096            20608              401
+
+iterations=10
+program_size_before.1=6133
+program_size_after.1=49
+elapsed_time_millis.1=8644
+count_test_script_executions.1=119
+
+program_size_before.2=49
+program_size_after.2=49
+elapsed_time_millis.2=1773
+count_test_script_executions.2=113
+
+program_size_before.3=49
+program_size_after.3=41
+elapsed_time_millis.3=2763
+count_test_script_executions.3=55
+
+program_size_before.4=41
+program_size_after.4=41
+elapsed_time_millis.4=522
+count_test_script_executions.4=8
+
+program_size_before.5=41
+program_size_after.5=41
+elapsed_time_millis.5=611
+count_test_script_executions.5=26
+
+program_size_before.6=41
+program_size_after.6=41
+elapsed_time_millis.6=2320
+count_test_script_executions.6=43
+
+program_size_before.7=41
+program_size_after.7=41
+elapsed_time_millis.7=3
+count_test_script_executions.7=0
+
+program_size_before.8=41
+program_size_after.8=37
+elapsed_time_millis.8=1709
+count_test_script_executions.8=5
+
+program_size_before.9=37
+program_size_after.9=37
+elapsed_time_millis.9=1758
+count_test_script_executions.9=32
+
+program_size_before.10=37
+program_size_after.10=37
+elapsed_time_millis.10=479
+count_test_script_executions.10=0
+

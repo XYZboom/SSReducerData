@@ -1,0 +1,76 @@
+#      iteration      before_size       after_size   removed_tokens         time(ms)          queries
+#              1            85359              454            84905           300019             2719
+#              2              454              454                0            82984             6027
+#              3              454              213              241            33149              430
+#              4              213              136               77            16400              234
+#              5              136              123               13            11524              171
+#              6              123              123                0              217                4
+#              7              123              123                0            10729              457
+#              8              123              123                0            10831              165
+#              9              123              123                0             3013               46
+#             10              123               69               54             5290               31
+#             11               69               65                4             6577               89
+#             12               65               65                0              788                3
+#          total            85359               65            85294           481558            10376
+
+iterations=12
+program_size_before.1=85359
+program_size_after.1=454
+elapsed_time_millis.1=300019
+count_test_script_executions.1=2719
+
+program_size_before.2=454
+program_size_after.2=454
+elapsed_time_millis.2=82984
+count_test_script_executions.2=6027
+
+program_size_before.3=454
+program_size_after.3=213
+elapsed_time_millis.3=33149
+count_test_script_executions.3=430
+
+program_size_before.4=213
+program_size_after.4=136
+elapsed_time_millis.4=16400
+count_test_script_executions.4=234
+
+program_size_before.5=136
+program_size_after.5=123
+elapsed_time_millis.5=11524
+count_test_script_executions.5=171
+
+program_size_before.6=123
+program_size_after.6=123
+elapsed_time_millis.6=217
+count_test_script_executions.6=4
+
+program_size_before.7=123
+program_size_after.7=123
+elapsed_time_millis.7=10729
+count_test_script_executions.7=457
+
+program_size_before.8=123
+program_size_after.8=123
+elapsed_time_millis.8=10831
+count_test_script_executions.8=165
+
+program_size_before.9=123
+program_size_after.9=123
+elapsed_time_millis.9=3013
+count_test_script_executions.9=46
+
+program_size_before.10=123
+program_size_after.10=69
+elapsed_time_millis.10=5290
+count_test_script_executions.10=31
+
+program_size_before.11=69
+program_size_after.11=65
+elapsed_time_millis.11=6577
+count_test_script_executions.11=89
+
+program_size_before.12=65
+program_size_after.12=65
+elapsed_time_millis.12=788
+count_test_script_executions.12=3
+

@@ -151,6 +151,8 @@ static int16_t func_89(    int32_t p_94);
 static uint32_t func_97( uint16_t p_99, uint16_t p_100, uint32_t p_101 );
 static int32_t func_1()
 {
+    for (; (((int32_t)1) <= (-25)); )
+    ;;
 
 (safe_sub_func_int32_t_s_s(func_8((((uint8_t)1))  ) ));
     g_1600 |= (((uint8_t)1));
@@ -176,6 +178,7 @@ static int32_t func_8(uint16_t p_9  )
 
 static int8_t func_29(int32_t p_30  )
 {
+    (((((((uint16_t)1)) || (((uint16_t)1))) | ((int8_t)1)) && ((uint16_t)1)) < ((int32_t)1));
     return ((int32_t)1);
 }
 

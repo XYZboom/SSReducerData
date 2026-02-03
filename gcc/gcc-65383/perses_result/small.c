@@ -1,77 +1,27 @@
-typedef signed      d     ;
-typedef short     j      ;
-typedef unsigned             ;
-typedef unsigned           b       ;
-typedef unsigned     b       ;
-                                ;
-               ;
-                                   ;
-                                   ;
-       d
- e                         (                     e   )
-{
-}
-               ;
-       d
- f                            (                        )
-{
-}
-       ;
-       d
- g                         (        e                )
-{
-}
-                                   ;
-                                       ;
-       void
-i            (            )
-{
-}
-       d       a           ;
-                                                                                                                                                                                                                                    ;
-       j       k           ;
-                                  ;
-       d        l              ;
-                               ;
-       b       t    [ ] = {0          ,0          ,1          };
-                                   ;
-static j        n     = 0X60   ;
-       b                                         ;
-static d      o      (b            , j           , d           );
-static d      r      (d           , b           , b            , d          );
-                                                   ;
-       j        p     (    )
-{
-                                                                                                                                                                                     o      (r  , k  ,    r      ( g                                                                                                                                                               , a  , o  , e  )                       )                                                                            ;
-}
-       b       q      (              d      c   )
-{
-                                ;
-}
-       d      o      (b        r   , j       a   , d       c   )
-{
-    b       b      = 0 ;
-}
-       d      r      (d       a   , b       g   , b        j   , d      e   )
-{
-    {
-                                   ;
-                                 ;
-        for (        ;             ;       )
-        {
-            b       c      = 0    ;
-            d       f     [1][2][5]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
-            if (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   t    [2]                   )
-                return c     ;
-            else
-printf(                          i      );
-                                            l     = f     [ n         ][ n         ][ n         ]                                                                                                   ;
-        }
-    }
-}
-                     ;
-               ;
+        signed
+                k
+                ;short
+               d    [ ] = {0          ,1                      };
+static
+        signed
+                e     = 0X60   ;
 int main (    )
 {
-    p     ();
+        for (        ;             ;       )
+        {
+        unsigned
+                                                                                                                                                                                                                                                                                                                                                                                     a
+                          [0][9][5]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+            if (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   d    [1]                   )
+                return
+                                                                                                                                                                                                                                0
+                             ;
+                                            k     =
+                                                                                                                                                                                                                                                                                                                                                                                     a
+                                                          [ e         ][
+                                                                                                                                                                                                                                0
+                                                                                   ][
+                                                                                                                                                                                                                                0
+                                                                                                ]                                                                                                   ;
+        }
 }

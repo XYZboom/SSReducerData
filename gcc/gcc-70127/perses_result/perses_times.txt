@@ -1,0 +1,4 @@
+00:25 INFO Reduction ended at 16:51:10 2026/02/01
+00:25 INFO Elapsed time is 1524 seconds (25 minutes 24 seconds)
+00:25 INFO Removed 12250 token(s). Reduction ratio is 108/12358=0.87%
+00:25 INFO Test script execution count: 6963

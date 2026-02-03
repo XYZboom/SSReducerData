@@ -5,6 +5,11 @@ typedef unsigned char uint8_t;
 typedef unsigned short int uint16_t;
 typedef unsigned int uint32_t;
 typedef unsigned long long int uint64_t;
+static void
+platform_main_end(uint32_t crc )
+{
+ printf ("checksum = %X\n", crc);
+}
 static int16_t
 (safe_unary_minus_func_int16_t_s)(int16_t si )
 {
@@ -37,19 +42,24 @@ crc32_byte (uint8_t b) {
 static void
 crc32_8bytes (uint64_t val)
 {
- crc32_byte ((val>>8) & 0xff);
+ crc32_byte ((val>>0) & 0xff);
  }
 static void
-transparent_crc (uint64_t val, char* vname )
+transparent_crc (uint64_t val  )
 {
  crc32_8bytes(val);
- if (((int)1)) {
-    printf("...checksum after hashing %s : %lX\n", vname, crc32_context ^ 0xFFFFFFFFUL);
  }
-}
 struct S0 {
    int32_t f0;
    signed f1 : 22;
+};
+struct S1 {
+   unsigned f0 : 16;
+   signed f1 : 9;
+   signed f2 : 28;
+   signed f3 : 13;
+   unsigned f4 : 15;
+   unsigned f5 : 17;
 };
 static uint32_t g_69 = 0UL;
 static uint16_t g_112 = 0x21B9L;
@@ -83,8 +93,10 @@ static uint16_t func_8(int32_t p_9 )
 }
 static uint8_t func_14( int8_t p_16   )
 {
-    for (; (((uint32_t)1) < 45); )
+    for (0; (((uint32_t)1) < 45); )
     {
+        struct S1 l_2476 = {214,10,10833,-7,32,40};
+        uint16_t l_2499 = 65533UL;
         struct S0 l_2620 = {-8L,666};
         for (p_16 = 0; (p_16 >= 0); )
         {
@@ -109,14 +121,15 @@ static uint8_t func_14( int8_t p_16   )
         };
     };
 }
-int main ( )
+int main (int argc, char* argv[])
 {
     int i, j, k;
     crc32_gentab();
     func_1();
     for (i = 0; i < 1; i++)
     {
-        transparent_crc(g_217[i].f1, "g_217[i].f1" );
+        transparent_crc(g_217[i].f1  );
         }
+    platform_main_end(crc32_context ^ 0xFFFFFFFFUL );
     return 0;
 }

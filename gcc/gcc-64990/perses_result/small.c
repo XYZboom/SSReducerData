@@ -1,35 +1,54 @@
-        short
+typedef short     l      ;
+typedef unsigned      h      ;
+static h       c     = 0X110  ;
+       h       n            ;
+        signed
+                b     = 1          ;
+        signed
                 v
-                ;typedef signed      c     ;
-static
-        unsigned
-               a     = 0X100  ;
-       c        e     = 1          ;
-         void
-               u
-                      (
-                      c      d  ,
-        short
-                                          b  , c       e  , c      a
-                                         )  {
+               [
+                       1
+                         ];
+       h       r     (
+        signed
+                                , l          ,
+        signed
+                                                          ,
+        signed
+                                                                       );
+        signed
+              a      (
+                                  );
+       h       r     (
+        signed
+                             w  , l       a  ,
+        signed
+                                                       o  ,
+        signed
+                                                                   d   )
+{
                 v
-                                                                                                                                                                                                                                                                                              =                 d                                                                                                ;
-         }
-       c       b
-                (
-                              b
-                               )  {
-    c        c     [0][3][2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+       [
+                                                                                                                                                                                                                                                                                     0
+                 ]
+                                                                                                                                                                                                                                                                                              =                 w                                                                                                ;
+    return        0 ;
+}
+        signed
+              a      (        a   )
+{
+    h        h     [0][3][2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
     for (         ;             ;           )
     {
-        if (e    )
+        if (b    )
             break;
-                        return c     [ a         ][ a          ][a     ];
+                        return h     [ c         ][ a          ][a     ];
     }
-    return  a
-                             ;
-                                            }
+        return      0 ;
+}
 int main (    )
 {
-                                                                       u     (b      (                                        0                                                                                                                                                                                                                                                                                                                                             ),        0    ,        0    ,      0    )                                                             ;
+                                                                       r     (a      (                                        0                                                                                                                                                                                                                                                                                                                                             ),        0    ,        0    ,      0    )                                                             ;
+                 ;
+         ;
 }

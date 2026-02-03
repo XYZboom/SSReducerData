@@ -1,12 +1,12 @@
 #!/bin/bash
 # allow docker to access current directory
 chmod 777 .
-run_in_docker="docker run --rm -v $(realpath .):/tmp/gcc-59903 -w /tmp/gcc-59903 cnsun/perses:perses_part_54_name_clang_trunk"
+run_in_docker="docker exec -w /host$(realpath .) perses"
 clang_3_8_0="$run_in_docker clang-3.8.0 -w"
 clang_7_1_0="$run_in_docker clang-7.1.0 -w"
 gcc_4_8_2="$run_in_docker gcc-4.8.2 -w"
 gcc_7_1_0="$run_in_docker gcc-7.1.0 -w"
-ccomp="$run_in_docker ccomp"
+ccomp="$run_in_docker /home/coq/.opam/4.05.0/bin/ccomp"
 
 # need to configure this part
 BADCC=("$gcc_4_8_2 -m32 -Os")
