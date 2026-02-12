@@ -1,4 +1,4 @@
-predict times: 19
+predict times: 18
 predict canceled times: 0
-file cache hit times: 8
-reduce time: 27.651174573s
+file cache hit times: 13
+reduce time: 25.198378580s

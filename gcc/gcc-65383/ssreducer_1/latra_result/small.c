@@ -1,0 +1,43 @@
+        unsigned
+                g_2729
+                ;
+        int
+               g_427[ ] = {0x92A1D2CDL,0x92A1D2CDL,0x92A1D2CDL};
+static
+        unsigned
+                g_503 = 0x06D7L;
+        unsigned
+               func_10
+                        (
+                                   )  {
+                                              }        signed
+              func_17
+                        (
+                                p_21
+                                   )  {
+        for (;                     ; )
+        {
+        int
+                    l_3593
+               [
+                           5
+                         ][
+                              9
+                                    ];
+            if (                                                                     g_427[2]                   )
+                return           1 ;
+                g_2729
+                                         =
+                    l_3593
+       [
+                                                    g_503
+                 ][
+                                                                 g_503
+                            ]
+                                                                                             ;
+        }
+                                              }
+int main ()
+{
+                                                                                                                                                                               func_17(             1 )                                                                                                                           ;
+    }

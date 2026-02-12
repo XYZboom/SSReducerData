@@ -1,0 +1,10 @@
+#      iteration      before_size       after_size   removed_tokens         time(ms)          queries
+#              1            57581              609            56972           747325             3138
+#          total            57581              609            56972           747325             3138
+
+iterations=1
+program_size_before.1=57581
+program_size_after.1=609
+elapsed_time_millis.1=747325
+count_test_script_executions.1=3138
+
