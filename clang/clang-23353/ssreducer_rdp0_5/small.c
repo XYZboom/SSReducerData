@@ -1,0 +1,123 @@
+
+typedef signed char int8_t;
+typedef short int int16_t;
+typedef int int32_t;
+
+static int8_t
+(safe_mul_func_int8_t_s_s)(int8_t si1, int8_t si2 )
+{
+
+  return
+
+
+
+
+
+
+    si1 * si2;
+}
+
+
+
+static int16_t
+(safe_rshift_func_int16_t_s_u)(int16_t left  )
+{}
+
+
+
+
+
+
+
+struct S1 {
+   signed f0 : 5;
+   };
+
+
+static int32_t g_25 = 0x6EAB3CF8L;
+static int32_t g_62 = 3L;
+static volatile struct S1 g_80 = {-4,-4,0x4F663622L,0xFA2EL};
+static int32_t *g_116 = &g_62;
+static int32_t g_2243 = 0x41CCDE37L;
+static int32_t g_2951 = 0x91FA2AD1L;
+
+
+
+static struct S1 func_1();
+static int32_t func_2(const int8_t p_3    );
+static int16_t func_10(   );
+static int32_t * func_49(  int8_t p_52 );
+static struct S1 func_1()
+{
+    if (func_2((0x9A57L & ((safe_rshift_func_int16_t_s_u(func_10(   ) )) || ((int)1)))    ))
+    {
+
+        }
+    else;
+
+    ((g_116 == &g_2243 || g_116 == &g_62 || g_116 == &g_25 || g_116 == &g_2951) ? (void) (0) : __assert_fail ("g_116 == &g_2243 || g_116 == &g_62 || g_116 == &g_25 || g_116 == &g_2951", "t.c", 552, __PRETTY_FUNCTION__));
+
+    }
+
+
+
+
+
+
+
+static int32_t func_2(const int8_t p_3    )
+{}
+
+
+
+
+
+
+
+static int16_t func_10(   )
+{
+    (*(*((int32_t***)0))) = func_49(  ((void ***)1) );
+
+    }
+
+
+
+
+
+
+
+static int32_t * func_49(  int8_t p_52 )
+{
+    if (((((((((void ***)1)) || ((void ***)1)) > ((void ***)1)) , (*(*((int32_t**)0)))) , &g_62) == (*((int32_t**)0))))
+    {
+
+
+    }
+    else
+    {
+        for (p_52 = 6; (p_52 != (-7)); p_52--)
+        {
+            g_80.f0 ^= ((safe_mul_func_int8_t_s_s(p_52, g_62)) && ((((int16_t)1)) || 1L));
+
+
+        }
+
+
+        }
+
+
+
+    g_116 = (*((int32_t**)0));
+
+
+}
+
+
+
+
+
+int main ()
+{
+    func_1();
+
+}
