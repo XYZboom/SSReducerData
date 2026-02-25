@@ -1,5 +1,0 @@
-predict times: 5470
-predict canceled times: 1981
-file cache hit times: 62
-elements cache hit times: 6575
-reduce time: 30m 18.737347372s
