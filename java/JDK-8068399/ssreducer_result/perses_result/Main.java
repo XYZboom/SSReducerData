@@ -1,5 +1,4 @@
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.stream.*;
        class a    {
                   <a>a a     (Stream<a> a     ,          a          b       ) {
     }
