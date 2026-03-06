@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
+
 def draw(df: pd.DataFrame):
     np.random.seed(0)
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
@@ -14,13 +15,14 @@ def draw(df: pd.DataFrame):
         ('S', 'Speed(token/s)')
     ]  # predict times, times, remain tokens, speed
     col_str = 'S p{p} + Latra Loop_{stat}'
-    for stat, stat_label in stats:
+    fig = plt.figure(figsize=(20, 5))
+    for stat_i, (stat, stat_label) in enumerate(stats):
         cols = []
         for prob in probs:
             col_name = col_str.format(p=prob, stat=stat)
             col = list(filter(lambda v: not np.isnan(v), df[col_name].values))
             cols.append(col)
-        fig, ax = plt.subplots()
+        ax = plt.subplot(1, len(stats), stat_i + 1)
         ax.boxplot(
             cols,
             tick_labels=probs,
@@ -32,4 +34,16 @@ def draw(df: pd.DataFrame):
         if stat == 'S':
             ax.set_yscale('log')
         ax.set_title(stat_label)
-        plt.show()
+    plt.show()
+    return fig
+
+
+if __name__ == '__main__':
+    df = pd.read_excel(
+        "reconstruct.xlsx",
+        header=[0, 1],
+        engine='openpyxl',
+        engine_kwargs=dict(data_only=True)
+    )
+    fig = draw(df)
+    fig.savefig('reconstruct.pdf')
