@@ -1,1 +1,0 @@
-Please run `prepare_perses.sh` before running perses in this directory.
