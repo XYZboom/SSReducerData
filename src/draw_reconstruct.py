@@ -1,41 +1,59 @@
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib.figure import Figure
 
 
-def draw(df: pd.DataFrame):
+def draw(df: pd.DataFrame, probs=None, vert=True, vert_stats=False):
+    if probs is None:
+        probs = ['1.0', '0.75', '0.5', '0.25', '0']
+    prob_labels = {
+        '0': 'w/o',
+        '1.0': 'w',
+    }
     np.random.seed(0)
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
     df.columns = ['_'.join(col).strip() for col in df.columns.values]
-    probs = ['1.0', '0.75', '0.5', '0.25', '0']
     stats = [
         ('P', 'Predict Times'),
-        ('T', 'Time(s)'),
+        ('T', 'Time'),
         ('R', 'Remain Tokens'),
-        ('S', 'Speed(token/s)')
+        # ('S', 'Speed(token/s)')
     ]  # predict times, times, remain tokens, speed
+    stat_label_map = {
+        'T': 'Seconds'
+    }
     col_str = 'S p{p} + Latra Loop_{stat}'
-    fig = plt.figure(figsize=(20, 5))
+    _figs = dict()
     for stat_i, (stat, stat_label) in enumerate(stats):
         cols = []
         for prob in probs:
             col_name = col_str.format(p=prob, stat=stat)
             col = list(filter(lambda v: not np.isnan(v), df[col_name].values))
             cols.append(col)
-        ax = plt.subplot(1, len(stats), stat_i + 1)
+        _fig, ax = plt.subplots(figsize=(4, 4), constrained_layout=True)
         ax.boxplot(
             cols,
-            tick_labels=probs,
-            flierprops=dict(marker='None')
+            widths=0.5,
+            tick_labels=[prob_labels.get(_l, _l) for _l in probs],
+            flierprops=dict(marker='None'),
+            vert=vert,
         )
+        if not vert:
+            ax.set_ylabel('Reconstruct Dependencies')
+            x_label = stat_label_map.get(stat)
+            if x_label is not None:
+                ax.set_xlabel(x_label)
         for i, (col, color) in enumerate(zip(cols, colors)):
-            x = np.random.normal(i + 1, 0.06, size=len(col))  # 抖动
-            ax.scatter(x, col, alpha=0.7, s=30, color=color, edgecolors='white', linewidth=0.5)
-        if stat == 'S':
-            ax.set_yscale('log')
+            scale = 0.06 if vert else 0.08
+            x = np.random.normal(i + 1, scale, size=len(col))  # 抖动
+            if vert:
+                ax.scatter(x, col, alpha=0.7, s=30, color=color, edgecolors='white', linewidth=0.5)
+            else:
+                ax.scatter(col, x, alpha=0.7, s=30, color=color, edgecolors='white', linewidth=0.5)
         ax.set_title(stat_label)
-    plt.show()
-    return fig
+        _figs[stat] = _fig
+    return _figs
 
 
 if __name__ == '__main__':
@@ -46,4 +64,19 @@ if __name__ == '__main__':
         engine_kwargs=dict(data_only=True)
     )
     fig = draw(df)
-    fig.savefig('reconstruct.pdf')
+    # fig.savefig('reconstruct.pdf')
+
+    df2 = pd.read_excel(
+        "reconstruct.xlsx",
+        header=[0, 1],
+        skiprows=[16, 20, ],
+        # nrows=18,
+        engine='openpyxl',
+        engine_kwargs=dict(data_only=True)
+    )
+    plt.rcParams['font.size'] = 16
+    figs = draw(df2, probs=['1.0', '0'], vert=False)
+    for name in figs:
+        fig: Figure = figs[name]
+        fig.show()
+        fig.savefig(f'{name}.pdf', dpi=300)
