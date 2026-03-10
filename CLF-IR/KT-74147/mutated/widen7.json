@@ -1,0 +1,122 @@
+{
+  "@type": "IrProgram",
+  "classes": [
+    {
+      "name": "I0",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE"
+    },
+    {
+      "name": "I3",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE"
+    },
+    {
+      "name": "I1",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE",
+      "typeParameters": [
+        {
+          "@type": "IrTypeParameter",
+          "name": "T0"
+        }
+      ],
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I3"
+        }
+      ]
+    },
+    {
+      "name": "I2",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE",
+      "allSuperTypeArguments": {
+        "T0": [
+          {
+            "@type": "IrTypeParameter",
+            "name": "T0"
+          },
+          {
+            "@type": "IrSimpleClassifier",
+            "classDecl": "I0"
+          }
+        ]
+      },
+      "implementedTypes": [
+        {
+          "@type": "IrParameterizedClassifier",
+          "classDecl": "I1",
+          "arguments": {
+            "T0": [
+              {
+                "@type": "IrTypeParameter",
+                "name": "T0"
+              },
+              {
+                "@type": "IrSimpleClassifier",
+                "classDecl": "I0"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I3"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "language": "KOTLIN",
+      "classKind": "FINAL",
+      "allSuperTypeArguments": {
+        "T0": [
+          {
+            "@type": "IrTypeParameter",
+            "name": "T0"
+          },
+          {
+            "@type": "IrSimpleClassifier",
+            "classDecl": "A2"
+          }
+        ]
+      },
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I2"
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I3"
+        },
+        {
+          "@type": "IrParameterizedClassifier",
+          "classDecl": "I1",
+          "arguments": {
+            "T0": [
+              {
+                "@type": "IrTypeParameter",
+                "name": "T0"
+              },
+              {
+                "@type": "IrSimpleClassifier",
+                "classDecl": "A2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

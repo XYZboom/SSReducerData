@@ -1,0 +1,267 @@
+{
+  "@type": "IrProgram",
+  "classes": [
+    {
+      "name": "A0",
+      "language": "KOTLIN",
+      "classKind": "FINAL",
+      "typeParameters": [
+        {
+          "@type": "IrTypeParameter",
+          "name": "T0"
+        }
+      ]
+    },
+    {
+      "name": "I0",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE",
+      "functions": [
+        {
+          "name": "func",
+          "parameterList": [
+            {
+              "name": "arg0",
+              "type": {
+                "@type": "IrParameterizedClassifier",
+                "classDecl": "A0",
+                "arguments": {
+                  "T0": [
+                    {
+                      "@type": "IrTypeParameter",
+                      "name": "T0"
+                    },
+                    {
+                      "@type": "IrBuiltInType",
+                      "@name": "IrAny"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ]
+    },
+    {
+      "name": "I1",
+      "language": "KOTLIN",
+      "classKind": "INTERFACE",
+      "functions": [
+        {
+          "name": "func",
+          "body": {},
+          "isOverride": true,
+          "parameterList": [
+            {
+              "name": "arg0",
+              "type": {
+                "@type": "IrParameterizedClassifier",
+                "classDecl": "A0",
+                "arguments": {
+                  "T0": [
+                    {
+                      "@type": "IrTypeParameter",
+                      "name": "T0"
+                    },
+                    {
+                      "@type": "IrBuiltInType",
+                      "@name": "IrAny"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ],
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        }
+      ]
+    },
+    {
+      "name": "A1",
+      "language": "KOTLIN",
+      "classKind": "ABSTRACT",
+      "functions": [
+        {
+          "name": "func",
+          "body": {},
+          "isOverride": true,
+          "parameterList": [
+            {
+              "name": "arg0",
+              "type": {
+                "@type": "IrParameterizedClassifier",
+                "classDecl": "A0",
+                "arguments": {
+                  "T0": [
+                    {
+                      "@type": "IrTypeParameter",
+                      "name": "T0"
+                    },
+                    {
+                      "@type": "IrBuiltInType",
+                      "@name": "IrAny"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ],
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "language": "JAVA",
+      "classKind": "OPEN",
+      "functions": [
+        {
+          "name": "func",
+          "body": {},
+          "isOverride": true,
+          "isOverrideStub": true,
+          "parameterList": [
+            {
+              "name": "arg0",
+              "type": {
+                "@type": "IrParameterizedClassifier",
+                "classDecl": "A0",
+                "arguments": {
+                  "T0": [
+                    {
+                      "@type": "IrTypeParameter",
+                      "name": "T0"
+                    },
+                    {
+                      "@type": "IrBuiltInType",
+                      "@name": "IrAny"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ],
+      "superType": {
+        "@type": "IrSimpleClassifier",
+        "classDecl": "A1"
+      },
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I1"
+        }
+      ],
+      "typeParameters": [
+        {
+          "@type": "IrTypeParameter",
+          "name": "T1"
+        }
+      ]
+    },
+    {
+      "name": "A3",
+      "language": "KOTLIN",
+      "classKind": "FINAL",
+      "functions": [
+        {
+          "name": "func",
+          "body": {},
+          "isOverride": true,
+          "isOverrideStub": true,
+          "parameterList": [
+            {
+              "name": "arg0",
+              "type": {
+                "@type": "IrParameterizedClassifier",
+                "classDecl": "A0",
+                "arguments": {
+                  "T0": [
+                    {
+                      "@type": "IrTypeParameter",
+                      "name": "T0"
+                    },
+                    {
+                      "@type": "IrBuiltInType",
+                      "@name": "IrAny"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ],
+      "superType": {
+        "@type": "IrParameterizedClassifier",
+        "classDecl": "A2",
+        "arguments": {
+          "T1": [
+            {
+              "@type": "IrTypeParameter",
+              "name": "T1"
+            },
+            {
+              "@type": "IrBuiltInType",
+              "@name": "IrAny"
+            }
+          ]
+        }
+      },
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I1"
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        }
+      ],
+      "allSuperTypeArguments": {
+        "T1": [
+          {
+            "@type": "IrTypeParameter",
+            "name": "T1"
+          },
+          {
+            "@type": "IrBuiltInType",
+            "@name": "IrAny"
+          }
+        ]
+      }
+    }
+  ]
+}

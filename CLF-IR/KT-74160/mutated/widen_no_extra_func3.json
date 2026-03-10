@@ -1,0 +1,241 @@
+{
+  "@type": "IrProgram",
+  "classes": [
+    {
+      "name": "I2",
+      "language": "JAVA",
+      "classKind": "INTERFACE"
+    },
+    {
+      "name": "I0",
+      "language": "JAVA",
+      "classKind": "INTERFACE",
+      "functions": [
+        {
+          "name": "func",
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          }
+        }
+      ]
+    },
+    {
+      "name": "I1",
+      "language": "JAVA",
+      "classKind": "INTERFACE",
+      "functions": [
+        {
+          "name": "func",
+          "isOverride": true,
+          "body": {},
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          },
+          "override": [
+            "I0"
+          ]
+        }
+      ],
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        }
+      ],
+      "typeParameters": [
+        {
+          "@type": "IrTypeParameter",
+          "name": "T",
+          "upperbound": {
+            "@type": "IrNullableType",
+            "innerType": {
+              "@type": "IrBuiltInType",
+              "@name": "IrAny"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "A0",
+      "language": "JAVA",
+      "classKind": "OPEN",
+      "implementedTypes": [
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I0"
+        }
+      ],
+      "functions": [
+        {
+          "name": "func",
+          "isOverride": true,
+          "body": {},
+          "isFinal": true,
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          },
+          "override": [
+            "I0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A1",
+      "language": "JAVA",
+      "classKind": "OPEN",
+      "implementedTypes": [
+        {
+          "@type": "IrParameterizedClassifier",
+          "classDecl": "I1",
+          "arguments": {
+            "T": [
+              {
+                "@type": "IrTypeParameter",
+                "name": "T"
+              },
+              {
+                "@type": "IrNullableType",
+                "innerType": {
+                  "@type": "IrBuiltInType",
+                  "@name": "IrAny"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "IrSimpleClassifier",
+          "classDecl": "I2"
+        }
+      ],
+      "superType": {
+        "@type": "IrSimpleClassifier",
+        "classDecl": "A0"
+      },
+      "allSuperTypeArguments": {
+        "T": [
+          {
+            "@type": "IrTypeParameter",
+            "name": "T"
+          },
+          {
+            "@type": "IrNullableType",
+            "innerType": {
+              "@type": "IrBuiltInType",
+              "@name": "IrAny"
+            }
+          }
+        ]
+      },
+      "functions": [
+        {
+          "name": "func",
+          "isOverride": true,
+          "isOverrideStub": true,
+          "body": {},
+          "isFinal": true,
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          },
+          "override": [
+            "A0",
+            "I1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "language": "KOTLIN",
+      "classKind": "ABSTRACT",
+      "implementedTypes": [
+        {
+          "@type": "IrParameterizedClassifier",
+          "classDecl": "I1",
+          "arguments": {
+            "T": [
+              {
+                "@type": "IrTypeParameter",
+                "name": "T"
+              },
+              {
+                "@type": "IrNullableType",
+                "innerType": {
+                  "@type": "IrBuiltInType",
+                  "@name": "IrAny"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "superType": {
+        "@type": "IrSimpleClassifier",
+        "classDecl": "A1"
+      },
+      "allSuperTypeArguments": {
+        "T": [
+          {
+            "@type": "IrTypeParameter",
+            "name": "T"
+          },
+          {
+            "@type": "IrNullableType",
+            "innerType": {
+              "@type": "IrBuiltInType",
+              "@name": "IrAny"
+            }
+          }
+        ]
+      },
+      "functions": [
+        {
+          "name": "func",
+          "isOverride": true,
+          "isOverrideStub": true,
+          "body": {},
+          "isFinal": true,
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          },
+          "override": [
+            "A1",
+            "I1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A3",
+      "language": "KOTLIN",
+      "classKind": "OPEN",
+      "superType": {
+        "@type": "IrSimpleClassifier",
+        "classDecl": "A2"
+      },
+      "functions": [
+        {
+          "name": "func",
+          "isOverride": true,
+          "isOverrideStub": true,
+          "body": {},
+          "isFinal": true,
+          "returnType": {
+            "@type": "IrBuiltInType",
+            "@name": "IrUnit"
+          },
+          "override": [
+            "A2"
+          ]
+        }
+      ]
+    }
+  ]
+}

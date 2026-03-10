@@ -7,3 +7,5 @@
 .idea/**/*
 **/.gradle
 **/*.iml
+
+**/*.json.reduced
