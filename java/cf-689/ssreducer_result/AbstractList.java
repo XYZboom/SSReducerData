@@ -1,12 +1,9 @@
 
 
 package java.util;
-import org.checkerframework.checker.initialization.qual.Initialized;
-import org.checkerframework.checker.nullness.qual.NonNull;
-import org.checkerframework.checker.nullness.qual.Nullable;
-import org.checkerframework.checker.nullness.qual.UnknownKeyFor;
-import org.checkerframework.dataflow.qual.Pure;
-import org.checkerframework.dataflow.qual.SideEffectFree;
+import org.checkerframework.checker.initialization.qual.*;
+import org.checkerframework.checker.nullness.qual.*;
+import org.checkerframework.dataflow.qual.*;
 
 public abstract class AbstractList<@Initialized E extends @Initialized Object> extends AbstractCollection<E> implements List<E> {
 

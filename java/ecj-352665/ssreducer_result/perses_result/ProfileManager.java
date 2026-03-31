@@ -1,11 +1,11 @@
-import org.w3c.dom.NodeList;
-                class b
+import org.w3c.dom.*;
+                class ProfileManager
 {
  static{
-  for(; 0 < ((NodeList) null).getLength(); )
-    new b             .c          ();
+  for(; 1 < ((NodeList) null).getLength(); )
+    new ProfileManager.ProfileInfo();
  }
-         class c
+         class ProfileInfo
  {
   }
 }

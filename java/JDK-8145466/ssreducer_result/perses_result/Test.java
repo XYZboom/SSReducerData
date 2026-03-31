@@ -1,13 +1,13 @@
-import java.util.TimerTask;
-       class b
+import java.util.*;
+       class Test
                                      {
                                          {
             new TimerTask() {
                     public void run() {
-                        b        (1L);
+                        invokeAll(1L);
                     }
                 };
             }
-                             void b        (int a            ) {
+                             void invokeAll(int flushInterval) {
             }
         }

@@ -1,7 +1,7 @@
 package net.mtu.eggplant.checker.parser_error;
 
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.*;
+import java.util.stream.*;
 
 public final class Version {
 

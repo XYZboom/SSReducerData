@@ -1,6 +1,6 @@
 
 
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 public abstract class ProfileManager
 {

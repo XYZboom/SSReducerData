@@ -1,31 +1,37 @@
 package java.util;
-class a                                    {
-           ListIterator         a           () {
+class SubList                              {
+           Object get(         ) {
+        return null;
+    }
+           int size() {
+        return 1;
+    }
+           ListIterator         listIterator() {
         return new ListIterator        () {
-                          ListIterator         a = ((AbstractList        ) null).listIterator(   );
+                          ListIterator         i = ((AbstractList        ) null).listIterator(   );
             public boolean hasNext() {
                 return true;
             }
-            public a      next() {
+            public Object next() {
                     return null;
             }
             public boolean hasPrevious() {
                 return true;
             }
-            public a      previous() {
+            public Object previous() {
                     return null;
             }
             public int nextIndex() {
-                return 0;
+                return 1;
             }
             public int previousIndex() {
-                return 0;
+                return 1;
             }
             public void remove() {
                 }
-            public void set(Object a) {
+            public void set(Object e) {
                 }
-            public void add(Object a) {
+            public void add(Object e) {
                 }
         };
     }

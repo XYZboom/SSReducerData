@@ -1,21 +1,21 @@
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
              class JdtBugJavaSeven {
-                        void a   ()
+                        void main()
             {
             try {
                 try {
-                    System.out.println(             );
+                    try {
+                            ((BufferedReader) null).readLine();
+                        } catch (      IOException e) {}
                 } finally {
                     try {
                         ((BufferedReader) null).close();
-                    } catch (      IOException a) {
+                    } catch (      IOException e) {
                         return;
                     }
                 }
             } finally {
-                                              {
-                    }
+                                              {}
             }
         }
 }

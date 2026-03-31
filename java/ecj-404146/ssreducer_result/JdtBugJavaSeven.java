@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public final class JdtBugJavaSeven {
 
@@ -12,7 +10,9 @@ public final class JdtBugJavaSeven {
 
                 try {
 
-                    System.out.println((String) null);
+                    try {
+                            ((BufferedReader) null).readLine();
+                        } catch (final IOException e) {}
 
                 } finally {
 

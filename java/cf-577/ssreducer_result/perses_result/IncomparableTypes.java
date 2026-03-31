@@ -1,39 +1,37 @@
 package java.util.stream;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-import java.util.function.IntConsumer;
-class a                 extends SpinedBuffer.OfPrimitive<Integer, int[], IntConsumer> {
-  public void forEach(Consumer                  a       ) {
+import java.util.*;
+import java.util.function.*;
+class IncomparableTypes extends SpinedBuffer.OfPrimitive<Integer, int[], IntConsumer> {
+  public void forEach(Consumer                  consumer) {
     }
-  protected int[][] newArrayArray(int a   ) {
+  protected int[][] newArrayArray(int size) {
     return           null;
   }
-  public int[] newArray(int a   ) {
+  public int[] newArray(int size) {
     return         null;
   }
-  protected int arrayLength(int[] a    ) {
-    return 0;
+  protected int arrayLength(int[] array) {
+    return 1;
   }
-  protected void arrayForEach(int[] a    ,
-      int b   , int c ,
-      IntConsumer d       ) {
+  protected void arrayForEach(int[] array,
+      int from, int to,
+      IntConsumer consumer) {
     }
   public PrimitiveIterator       iterator() {
     return                                     null;
   }
-  class b      extends BaseSpliterator<Spliterator.OfInt> implements Spliterator.OfInt {
-    b     () {
-      super(0, 0,
-          0, 0);
+  class Splitr extends BaseSpliterator<Spliterator.OfInt> implements Spliterator.OfInt {
+    Splitr() {
+      super(1, 1,
+          1, 1);
     }
-    b      newSpliterator(int a              , int b             ,
-        int c                     , int d                    ) {
+    Splitr newSpliterator(int firstSpineIndex, int lastSpineIndex,
+        int firstSpineElementIndex, int lastSpineElementFence) {
       return          null;
     }
-    void arrayForOne(int[] a    , int b    , IntConsumer c       ) {
+    void arrayForOne(int[] array, int index, IntConsumer consumer) {
       }
-                b     arraySpliterator(int[] a    , int b     , int c  ) {
+                OfInt arraySpliterator(int[] array, int offset, int len) {
       return                               null;
     }
   }

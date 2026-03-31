@@ -1,10 +1,10 @@
 import java.util.stream.*;
-       class a    {
-                  <a>a a     (Stream<a> a     ,          a          b       ) {
+       class Main {
+                  <T>T maxKey(Stream<T> stream,          T          function) {
     }
-              int a              (double a        ) {
+              int getXByFrequency(double frequency) {
     }
                {
-        a              (a     (IntStream.range(0, 0).boxed(), a -> a                             ));
+        getXByFrequency(maxKey(IntStream.range(0, 1).boxed(), i -> Math                          ));
     }
 }

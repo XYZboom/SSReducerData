@@ -1,12 +1,12 @@
-import java.util.Map;
-import java.util.stream.Collectors;
-             class a       {
-         static Map<a     , a     > a                       () {
+import java.util.*;
+import java.util.stream.*;
+             class Version {
+         static Map<String, String> getAllVersionInformation() {
     return                       null;
   }
                        {
-    a      .a                       ().entrySet().stream()
-      .map(a ->               ""                                )
+    Version.getAllVersionInformation().entrySet().stream()
+      .map(e ->               "%s:%s"                           )
       .collect(Collectors.joining(    ));
   }
 }

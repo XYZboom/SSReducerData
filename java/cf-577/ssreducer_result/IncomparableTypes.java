@@ -1,9 +1,7 @@
 package java.util.stream;
 
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-import java.util.function.IntConsumer;
+import java.util.*;
+import java.util.function.*;
 
 class IncomparableTypes extends SpinedBuffer.OfPrimitive<Integer, int[], IntConsumer> {
   @Override

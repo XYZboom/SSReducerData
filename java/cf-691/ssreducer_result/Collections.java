@@ -1,8 +1,11 @@
 
 
 package java.util;
-import org.checkerframework.framework.qual.AnnotatedFor;
-import java.io.Serializable;
+import org.checkerframework.checker.initialization.qual.*;
+import org.checkerframework.checker.nullness.qual.*;
+import org.checkerframework.dataflow.qual.*;
+import org.checkerframework.framework.qual.*;
+import java.io.*;
 
 @AnnotatedFor({"nullness"})
 public class Collections {
