@@ -1,0 +1,40 @@
+#      iteration      before_size       after_size   removed_tokens         time(ms)          queries
+#              1              500              154              346            42878              394
+#              2              154              163               -9             2968               14
+#              3              148              135               13            21767              215
+#              4              135              124               11            12085               58
+#              5              122               85               37            18928              156
+#              6               85               85                0             2120               11
+#          total              500               85              415           100754              848
+
+iterations=6
+program_size_before.1=500
+program_size_after.1=154
+elapsed_time_millis.1=42878
+count_test_script_executions.1=394
+
+program_size_before.2=154
+program_size_after.2=163
+elapsed_time_millis.2=2968
+count_test_script_executions.2=14
+
+program_size_before.3=148
+program_size_after.3=135
+elapsed_time_millis.3=21767
+count_test_script_executions.3=215
+
+program_size_before.4=135
+program_size_after.4=124
+elapsed_time_millis.4=12085
+count_test_script_executions.4=58
+
+program_size_before.5=122
+program_size_after.5=85
+elapsed_time_millis.5=18928
+count_test_script_executions.5=156
+
+program_size_before.6=85
+program_size_after.6=85
+elapsed_time_millis.6=2120
+count_test_script_executions.6=11
+

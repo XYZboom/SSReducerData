@@ -1,0 +1,2 @@
++ sh -c ./t
+Floating point exception (core dumped)
